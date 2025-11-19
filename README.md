@@ -1,4 +1,28 @@
 # JS-Project-6-slider
+
+## 📌 Problem Definition
+Build a Smart Image Slider where user can:
+- View images one-by-one
+- Add new images dynamically
+- See slide number and captions
+- Use Auto-play and Manual controls
+- Get console log outputs for every stage
+- Code must be inside script.js or <script> tag
+
+## 🔄 Flow of Program
+1. `showSlide()` loads current slide
+2. `nextSlide()` → moves forward  
+3. `prevSlide()` → moves backward  
+4. `addImage()` → Adds new URL + caption  
+5. `startAutoPlay()` → Auto slide every 3 seconds  
+6. `stopAutoPlay()` → stops autoplay  
+7. Console log shows:
+   - Slide change
+   - Messages
+   - Added images
+   - Auto-play events
+  
+     
 <img width="549" height="905" alt="s1" src="https://github.com/user-attachments/assets/b86eda92-9c24-4bb5-a269-056936e10e80" />
 <img width="552" height="898" alt="s2" src="https://github.com/user-attachments/assets/33bbab12-ca72-48ed-8a73-5fde020f784e" />
 <img width="545" height="901" alt="s3" src="https://github.com/user-attachments/assets/2c0f7164-8df2-4803-a2e5-8b6148684f8b" />
