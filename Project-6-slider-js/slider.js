@@ -1,20 +1,18 @@
-// All slides saved here
+
 let gallery = [
-  { image: "./img/img1.jpg", caption: "Beautiful Sunset" },
-  { image: "./img/img2.jpg", caption: "Mountain View" },
-  { image: "./img/img3.jpg", caption: "Calm Lake" }
+  { image: "./img/img1.jpg", caption: "Ironman" },
+  { image: "./img/img2.jpg", caption: "Cute Boy" },
+  { image: "./img/img3.jpg", caption: "Spider man" }
 ];
 
 let indexNumber = 0;
 let timer = null;
 
-// Show slide
 function showSlide(num) {
   document.getElementById("slideImage").src = gallery[num].image;
   document.getElementById("caption").textContent = "Caption: " + gallery[num].caption;
   document.getElementById("counter").textContent = `Slide ${num + 1} of ${gallery.length}`;
 }
-
 // Next
 function nextSlide() {
   const msg = document.getElementById("message");
@@ -43,7 +41,7 @@ function prevSlide() {
   showSlide(indexNumber);
 }
 
-// Add new slide
+// new slide
 function addImage() {
   let url = document.getElementById("imgURL").value;
   let text = document.getElementById("imgCaption").value;
@@ -83,5 +81,4 @@ function stopAutoPlay() {
   document.getElementById("message").textContent = "Auto-play stopped";
 }
 
-// Load first slide
 showSlide(indexNumber);
