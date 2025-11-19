@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Image Slider</title>
+  <link rel="stylesheet" href="./slider.css">
+</head>
+
+<body>
+  <div class="slider">
+    <h2>Smart Image Slider</h2>
+
+    <img id="slideImage" src="" alt="Slide Image" />
+    <p id="caption"></p>
+    <p id="counter"></p>
+    <p id="message"></p>
+
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
+
+    <br /><br />
+    <input type="text" id="imgURL" placeholder="Image URL" /> <br /><br />
+    <input type="text" id="imgCaption" placeholder="Caption" /> <br /><br />
+    <button onclick="addImage()">Add New Slide</button>
+
+    <br /><br />
+    <button onclick="startAutoPlay()">Start Auto-play</button>
+    <button onclick="stopAutoPlay()">Stop Auto-play</button>
+  </div>
+
+
+  <script src="./slider.js"></script>
+
+</body>
+
+</html>
